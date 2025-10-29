@@ -563,7 +563,7 @@ else:
            st.toast(f"Players {eliminatedString} eliminated!\nStarting next round")
 
        if st.button("Play Next Game", use_container_width=True):
-           existing_money = money
+           existing_money = money1
            existing_names = st.session_state.playerNames.copy() #Stack Overflow
            st.session_state.deck = Deck()
            st.session_state.deck.shuffle()
